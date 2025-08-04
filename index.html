@@ -5,23 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sorpresa</title>
   <style>
-    html, body {
+    body, html {
       margin: 0;
       padding: 0;
+      background-color: #000;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contenedor {
+      max-width: 320px;
+      width: 90%;
       background-color: #000;
     }
 
-    .fondo-imagen {
-      background: url('https://media.tenor.com/eJm5AnndNhcAAAAM/que-rico-e-peruano.gif') center center no-repeat;
-      background-size: cover;
+    .contenedor img {
       width: 100%;
-      height: 100vh;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 <body>
-  <div class="fondo-imagen"></div>
+  <div class="contenedor">
+    <img src="https://media.tenor.com/eJm5AnndNhcAAAAM/que-rico-e-peruano.gif" alt="Sorpresa" />
+  </div>
 </body>
 </html>
 
